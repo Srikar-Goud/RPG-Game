@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RPG - Dragon Repeller</title>
+    <link rel="stylesheet" href="./dr.css">
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div id="intro">
+        <div class="ascii-art">
+    ____  ____      _    ____  ___  _   _   
+   |  _ \|  _ \    / \  / ___|/ _ \| \ | |  
+   | | | | |_) |  / _ \| |  _| | | |  \| |  
+   | |_| |  _ <  / ___ \ |_| | |_| | |\  |  
+   |____/|_| \_\/_/   \_\____|\___/|_| \_|  
+                                            
+   ____  _____ ____  _____ _     _     _____ ____  
+  |  _ \| ____|  _ \| ____| |   | |   | ____|  _ \ 
+  | |_) |  _| | |_) |  _| | |   | |   |  _| | |_) |
+  |  _ <| |___|  __/| |___| |___| |___| |___|  _ < 
+  |_| \_\_____|_|   |_____|_____|_____|_____|_| \_\
+        </div>
+        <div class="intro-title">*** DRAGON REPELLER ***</div>
+        <div class="intro-text">
+            THE YEAR IS 1987...<br><br>
+            A TERRIBLE DRAGON HAS AWAKENED<br>
+            AND TRAPPED THE VILLAGE.<br><br>
+            YOU ARE THE ONLY HOPE.<br><br>
+            COLLECT WEAPONS. GAIN EXPERIENCE.<br>
+            DEFEAT THE DRAGON.<br><br>
+            PRESS START TO BEGIN YOUR QUEST...
+        </div>
+        <button class="start-button" onclick="startGame()">>>> START GAME <<<</button>
+    </div>
+
+    <!-- Level Indicator -->
+    <div id="levelIndicator">LVL: <span id="currentLevel">1</span></div>
+
+    <!-- Game Container -->
+    <div id="game">
+        <div id="stats">
+            <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+            <span class="stat">HP: <strong><span id="healthText">100</span></strong></span>
+            <span class="stat">GOLD: <strong><span id="goldText">50</span></strong></span>
+        </div>
+        <div id="controls">
+            <button id="button1">GO TO STORE</button>
+            <button id="button2">GO TO CAVE</button>
+            <button id="button3">FIGHT DRAGON</button>
+        </div>
+        <div id="monsterStats">
+            <span class="stat">ENEMY: <strong><span id="monsterName"></span></strong></span>
+            <span class="stat">HP: <strong><span id="monsterHealth"></span></strong></span>
+            <span class="stat">LVL: <strong><span id="monsterLevel"></span></strong></span>
+        </div>
+        <div id="text">
+            WELCOME TO DRAGON REPELLER.<br><br>
+            THE DRAGON IS BLOCKING THE EXIT.<br>
+            YOU MUST DEFEAT IT TO FREE THE VILLAGE.<br><br>
+            YOU ARE IN THE TOWN SQUARE.<br>
+            WHERE DO YOU WANT TO GO?
+        </div>
+    </div>
+<script src="./dr.js"></script>
+</body>
+</html>
